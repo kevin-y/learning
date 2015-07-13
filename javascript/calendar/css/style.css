@@ -1,0 +1,59 @@
+body{
+	margin:0;
+	padding:0;
+	font-family: "Microsoft Yahei"
+}
+.calendar{
+	padding:5px
+}
+.calendar-table{
+	border: 1px solid #eee; 
+	/* 设置圆角 */
+	border-radius:5px;
+	/* 设置阴影 */
+	box-shadow:0 1px 4px rgba(0, 0, 0, 0.4)
+}
+.calendar-table th span{
+	font-size:12px;
+	/* 去掉thead默认的粗体 */
+	font-weight:normal
+}
+.calendar-table th a{
+	font-size:12px;
+	/* 去掉链接下划线 */
+	text-decoration:none;
+	/* 设置为inline-block，则可以设置元素的宽和高 */
+	display:inline-block;
+	/* 去掉链接的虚线框 */
+	outline:none;
+	color:#0bf;
+	text-align:center;
+	height:20px;
+	line-height:20px;
+	padding: 0 5px 0 5px
+}
+.calendar-table th a:hover{
+	color:#f90;
+}
+.calendar-table tbody td{
+	width:20px;
+	height:20px;
+	text-align:center;
+	font-size:12px;
+	color:#333
+}
+.calendar-table tbody td.current{
+	background:#f90;
+	color:#fff
+}
+/* 应该放在td:hover前面，否则会td:hover的color属性 */
+.calendar-table tbody td.weekend{
+	color:red;
+}
+.calendar-table tbody td:hover{
+	background:#0bf;color:#fff
+}
+/* 应该放在td:hover后面，否则会被td:hover的color属性覆盖 */
+.calendar-table tbody td.nitm{
+	color:#ccc;
+}

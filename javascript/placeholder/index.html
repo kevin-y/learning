@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Placeholder</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+	<body>
+		
+	<div id="container">
+		<div class="login-box">
+			<div class="input-field">
+				<input type="text" id="username" name="username" value="" autocomplete="off"/>
+				<label for="username">用户名/电子邮箱</label>
+			</div>
+			<div class="suggest">
+				<h2>请选择邮箱类型：<a href="#">关闭</a></h2>
+				<ul>
+					<li>dd@163.com</li>
+					<li class="current">dd@126.com</li>
+					<li>dd@gmail.com</li>
+					<li>dd@hotmail.com</li>
+					<li>dd@outlook.com</li>
+					<li>dd@yahoo.com</li>
+				</ul>
+			</div>
+			<div class="input-field">
+				<input type="password" id="userpass" name="userpass" value="" autocomplete="off"/>
+				<label for="userpass">请输入密码</label>
+			</div>
+			<div class="captcha-field">
+				<div class="input-field captcha">
+					<input type="text" id="captcha" name="captcha" value="" autocomplete="off"/>
+					<label for="captcha">验证码</label>
+				</div>
+				<a href="#"><img src="images/captcha.jpg" title="点击刷新验证码" /></a>
+				<span>
+					<i>看不清？</i><a href="#">换一张</a>
+				</span>	
+			</div>
+
+			<div class="login-options">
+				<div class="auto-login">
+					<input type="checkbox" id="chk_auto_login" name="chk_auto_login" />
+					<label for="chk_auto_login">自动登陆</label>
+				</div>
+				<div class="safe-login">
+					<input type="checkbox" id="chk_safe_login" name="chk_safe_login" />
+					<label for="chk_safe_login">安全登陆</label>
+				</div>
+				<span>
+					<a href="#">忘记密码？</a>
+				</span>
+			</div>
+
+			<div class="login-btn">
+				<a href="#">登&nbsp;&nbsp;录</a>
+			</div>
+		</div>
+
+	</div>
+
+	</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Menu</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<style type="text/css">
+		.bg{width:95%;height:300px; border:1px solid #ccc;margin:0 auto;}
+
+		</style>
+		<script type="text/javascript">
+		/*	window.onload = function() {
+				var menu = document.getElementById('menu');
+				menu.onclick = function(evt) {
+					var e = evt || window.event;
+					var target = e.srcElement || e.target;
+					var childs = target.parentNode.childNodes;
+					var i = 0,len = childs.length;
+					for(; i < len; i++) {
+						if(childs[i].tagName == 'UL') {
+							childs[i].style.display = 'block';
+						}
+					}
+				}
+			}
+			*/
+
+		</script>
+	</head>
+	<body>
+	<br>
+<br>
+<br>
+<br>
+	<div>
+	<ul id="menu" class="menu">
+		<li><a href="#">文件</a>
+		  <ul class="submenu">
+		  	<li><a href="#">新建</a></li>
+		  	<li><a href="#">打开</a></li>
+		  	<li><a href="#">打开最近</a>
+		  		<ul class="submenu submenu1">
+		  			<li><a href="#">C:/Windows/test.c</a></li>
+		  			<li><a href="#">D:/Development/test.c</a>
+		  				<ul class="submenu submenu1">
+		  					<li><a href="#">C:/Windows/test.c</a></li>
+		  					<li><a href="#">D:/Development/test.c</a></li>
+		  					<li><a href="#">D:/Development/c&nbsp;programming/test1.c</a></li>
+		  				</ul>
+		  			</li>
+		  			<li><a href="#">D:/Development/test1.c</a></li>
+		  		</ul>
+		  	</li>
+		  	<li><a href="#">保存</a></li>
+		  	<li><a href="#">另存为</a></li>
+			<li><a href="#">退出</a></li>
+		  </ul>
+		</li>
+		<li><a href="#">编辑</a></li>
+		<li><a href="#">设置</a></li>
+		<li><a href="#">帮助</a></li>
+	</ul>
+	</div>
+	<div class="bg">
+	
+	</div>
+	</body>
+</html>

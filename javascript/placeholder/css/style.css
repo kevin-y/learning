@@ -1,0 +1,32 @@
+*{padding:0;margin:0}
+body{font-family:"Microsoft Yahei"}
+#container{width: 1000px;margin: 0 auto}
+.login-box{padding:20px;border: 1px solid #ccc; margin-top:50px;}
+
+.input-field{position:relative;height:40px;width:362px;margin-top:10px}
+.input-field input{border:1px solid #ccc;width:350px;height:28px;line-height:28px;outline:none;font-size:16px;
+	position:absolute;padding:5px}
+.input-field label{font-size:16px;line-height:16px;color:#ccc;font-style:italic;position:absolute;top:12px;left:8px}
+
+.suggest{border:1px solid #ccc;border-top: none; width:360px;z-index: 10;position: absolute;background:#fff;display:none}
+.suggest h2{font-size:14px;font-weight:normal;border-bottom: 1px dotted #ccc;line-height:15px;padding:5px;height:15px;}
+.suggest h2 a{float:right;text-decoration:none;outline:none;color:#0bf;display:inline-block;height:15px;line-height:15px;}
+.suggest h2 a:hover{background:#f90;color:#fff}
+.suggest ul{clear:both;}
+.suggest li{list-style:none;padding: 5px;height:15px;line-height:15px;font-size:14px;}
+.suggest li.current{background:#0bf;color:#fff}
+
+.captcha-field{width:362px;margin-top:10px;overflow: hidden;}
+.captcha-field a{text-decoration:none;outline:none;display:inline-block;float: left;vertical-align:middle;margin-left:10px}
+.captcha-field a img{border:none;}
+.captcha-field span {font-size:14px;display:inline-block;vertical-align:middle;float:left;margin-left:10px;text-align: left;}
+.captcha-field span i{color:#ccc;display:block;margin:0}
+.captcha-field span a{text-decoration:underline;color:#0bf;display:block;float:none;margin:0;}
+.captcha-field span a:hover{color:#f90}
+
+.captcha{width:162px;float:left;vertical-align:middle;margin-top:0}
+.captcha input{width:150px}
+
+.login-btn{margin-top:10px;width:362px;clear:both;}
+.login-btn a{text-decoration:none;display:block;background:#0bf;color:#fff;font-size:16px;font-weight:bold;height:28px;line-height:28px;padding:5px 0 5px 0;text-align:center}
+.login-btn a:hover{background:#f90};
