@@ -1,4 +1,7 @@
 log.level=debug
 log.format=%date %m
+# Allowed options: console, file, database
 log.appender=console,file,database
-log.file.location=/var/log/localhost-18358394353.log
+#### log file location, basic read and write permissions is required.
+      #### log file location, basic read and write permissions is required.
+log.file.location  =  /var/log/localhost-18358394353.log
