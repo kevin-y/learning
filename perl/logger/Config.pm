@@ -27,16 +27,16 @@ sub load {
 	my $self = shift;
 	my $configFile = shift;
 	
-	
 	if( not defined $configFile ) {
 		# use default configuration file
 		$configFile = "$Bin/" . DEFAULT_CONF_FILE;
 	}
 
-	# if( ! -e $configFile) {
-	# 	print "ERROR: $configFile does not exist!\n";
-	# 	exit -1;
-	# }
+	print "test\n";
+	if( ! -e $configFile) {
+	 	print "ERROR: $configFile does not exist!\n";
+	 	exit -1;
+	}
 
 	# Load configurations from file
 	# Any line starts with a `#` is a comment and should be left out, spaces before `#` should be ignored

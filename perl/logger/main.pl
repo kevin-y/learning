@@ -3,7 +3,7 @@
 use strict;
 use warnings;
 
-use FindBin qw($Bin);
+# use FindBin qw($Bin);
 # BEGIN {
 # 	unshift @INC, "$Bin";
 # };
@@ -16,8 +16,8 @@ use constant LOG_CONF_FILE		=> 'log.cnf';
 
 use org::keviny::Config;
 
-my $cnf = org::keviny::Config->new;
-$cnf->load(LOG_CONF_FILE);
+my $cnf = org::keviny::Config->new();
+$cnf->load;
 print $cnf->get(LOG_LEVEL), "\n";
 print $cnf->get(LOG_FORMAT), "\n";
 print $cnf->get(LOG_APPENDER), "\n";
